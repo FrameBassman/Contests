@@ -20,19 +20,20 @@ inline long mul(long x, long y)
 	return (long long)x * y & md;
 }
 
-long ceil(long x, long y)
+long long ceil(long long x, long long y)
 {
-	add(x, y);
-	return (x - 1) / y;
+	if (x % y == 0)
+		return x / y;
+	return x / y + 1;
 }
 
-int main()
+int a1_main()
 {
 	cin >> n;
 	cin >> m;
 	cin >> a;
 
-	cout << mul(ceil(m, a), ceil(n, a));
+	cout << ceil(m, a) * ceil(n, a);
 
 	return 0;
 }
