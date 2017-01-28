@@ -17,9 +17,4 @@
   <ItemGroup>
     <Text Include="readme.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>
